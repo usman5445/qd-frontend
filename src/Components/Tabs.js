@@ -5,7 +5,7 @@ function Tabs({ tabs }) {
   const [selectedTab, setSelectedTab] = useState("All");
   return (
     <div className="relative h-[90%] w-full ">
-      <div className="flex  overflow-x-scroll ">
+      <div className="flex  overflow-x-scroll md:overflow-auto">
         {tabs.map((el) => {
           return (
             <button
@@ -23,15 +23,25 @@ function Tabs({ tabs }) {
           );
         })}
       </div>
-      <div className="relative h-[95%] w-full overflow-y-scroll  md:p-4">
-        <h1 className="font-Mulish-Bold text-2xl">Food</h1>
-        <div className="relative grid h-full grid-cols-1  gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <Card Title="Sashimi" price={22} />
-          <Card Title="Sashimi" price={22} />
-          <Card Title="Sashimi" price={22} />
-          <Card Title="Sashimi" price={22} />
-          <Card Title="Sashimi" price={22} />
-          <Card Title="Sashimi" price={22} />
+      <div className="relative h-[95%] w-full space-y-4 overflow-x-hidden  md:p-4">
+        <div>
+          <h1 className="font-Mulish-Bold text-2xl">Food</h1>
+          <div className="relative  grid h-full grid-cols-1 gap-4  md:grid-cols-2 lg:grid-cols-3">
+            <Card Title="Sashimi" price={22} />
+            <Card Title="Sashimi" price={22} />
+            <Card Title="Sashimi" price={22} />
+            <Card Title="Sashimi" price={22} />
+            <Card Title="Sashimi" price={22} />
+            <Card Title="Sashimi" price={22} />
+          </div>
+        </div>
+        <div>
+          <h1 className="font-Mulish-Bold text-2xl">Drinks</h1>
+          <div className="relative  grid h-full grid-cols-1 gap-4  md:grid-cols-2 lg:grid-cols-3">
+            <Card Title="Sashimi" price={22} />
+            <Card Title="Sashimi" price={22} />
+            <Card Title="Sashimi" price={22} />
+          </div>
         </div>
       </div>
     </div>

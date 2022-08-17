@@ -12,7 +12,7 @@ function Sidebar() {
   const [selectedBtn, setSelectedBtn] = useState("dashboard");
   const navigate = useNavigate();
   return (
-    <div className="flex h-full w-20 flex-col items-center justify-evenly  p-3">
+    <div className="flex h-full w-20 flex-col items-center justify-evenly p-1 md:p-3">
       <div className="space-y-4">
         <button
           onClick={() => {
