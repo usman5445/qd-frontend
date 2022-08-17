@@ -16,7 +16,7 @@ function App() {
         <Navbar />
         <div className="relative flex h-[92%] w-full">
           <Sidebar />
-          <div className="h-full w-full bg-Layout-LightGray p-4">
+          <div className="h-full w-full bg-Layout-LightGray p-4  md:p-8">
             <Routes>
               <Route index path="" element={<Dashboard />} />
               <Route path="coupons" element={<Coupons />} />

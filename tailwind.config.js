@@ -10,6 +10,7 @@ module.exports = {
       "Text-DarkBlue": "#11142D",
       "Text-Cyan": "#42BDA1",
       "Text-DarkGray": "#92929D",
+      Transparent: "rgba(0,0,0,0)",
     },
     extend: {
       fontFamily: {
